@@ -47,22 +47,22 @@ export default function Header({ mobileMenuOpen }) {
             {
               name: "linkedin",
               icon: <BiLogoLinkedin className="text-xl" />,
-              url: "https://linkedin.com/in/yourprofile",
+              url: "https://www.linkedin.com/in/anupam-lugun",
             },
             {
               name: "github",
               icon: <BiLogoGithub className="text-xl" />,
-              url: "https://github.com/yourusername",
+              url: "https://github.com/Anupamlugun",
             },
             {
               name: "whatsapp",
               icon: <BiLogoWhatsapp className="text-xl" />,
-              url: "https://wa.me/yourphonenumber",
+              url: "https://wa.me/9608683352",
             },
             {
               name: "email",
               icon: <BiMailSend className="text-xl" />,
-              url: "mailto:youremail@example.com",
+              url: "mailto:anupam.lugun.272@gmail.com",
             },
           ].map((social) => (
             <Button
