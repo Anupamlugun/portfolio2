@@ -28,7 +28,7 @@ export default function Header({ mobileMenuOpen }) {
           <Image
             width={128}
             height={128}
-            src="/profile.jpg"
+            src="/img/profile.jpg"
             alt="Profile"
             className="h-full w-full object-cover"
           />
