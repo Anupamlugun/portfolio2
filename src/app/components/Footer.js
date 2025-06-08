@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 
 export function Footer() {

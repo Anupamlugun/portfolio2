@@ -6,7 +6,7 @@ const Type = () => {
 
   useEffect(() => {
     const options = {
-      strings: ["Developer", "Youtuber"],
+      strings: ["Software Developer"],
       typeSpeed: 100,
       backSpeed: 50,
       loop: true,
@@ -25,11 +25,12 @@ const Type = () => {
       data-aos="fade-up"
       data-aos-delay="100"
     >
-      <h2 className="text-4xl font-bold md:text-5xl lg:text-6xl">
+      <h2 className="text-4xl font-bold md:text-5xl lg:text-6xl lg:text-mythemecolor ">
         Anupam Lugun
       </h2>
       <p className="mt-4 text-xl md:text-2xl">
-        I am <span className="typed text-mythemecolor"></span>
+        <span className="text-black">I am </span>
+        <span className="typed"></span>
       </p>
     </div>
   );

@@ -55,7 +55,7 @@ export default function Resume() {
   const experienceData = [
     {
       id: 1,
-      title: "Java Full Stack Developer",
+      title: "Java Developer",
       period: "2025 - Present",
       company: "Sparrow Softech Pvt Ltd",
       responsibilities: [
@@ -89,8 +89,8 @@ export default function Resume() {
         <div className="mb-16 text-center" data-aos="fade-up">
           <h2 className="text-4xl font-bold text-mythemecolor mb-4">Resume</h2>
           <p className="text-lg text-brand-soft-foreground max-w-2xl mx-auto">
-            Master’s degree completed. Experienced in full-stack development
-            with Java Spring Boot(Microservices) React.js and other Technology.
+            Master’s degree completed. Experienced in software development with
+            Java Spring Boot(Microservices) React.js and other Technology.
           </p>
         </div>
 

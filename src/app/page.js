@@ -2,7 +2,7 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Resume from "./components/Resume";
 import { Footer } from "./components/Footer";
 import { ModeToggle } from "./components/ModeToggle";
@@ -13,7 +13,7 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 
 export default function Home() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(true);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);

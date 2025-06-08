@@ -19,7 +19,7 @@ export default function About() {
   const content = {
     title: "About",
     description:
-      "Full Stack Developer with hands-on expertise in Java, Spring Boot, React.js,Node.js, PHP MySQL and  PostgreSQL. Proficient in building end-to-end web applications using modern frameworks. Strong experience in RESTful API integration, agile workflows, and optimizing user experience.",
+      "Software Developer with hands-on expertise in Java, Spring Boot, React.js,Node.js, PHP MySQL and  PostgreSQL. Proficient in building end-to-end web applications using modern frameworks. Strong experience in RESTful API integration, agile workflows, and optimizing user experience.",
     profile: {
       image: "/img/profile.jpg",
       alt: "profile",
