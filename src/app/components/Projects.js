@@ -25,7 +25,7 @@ export default function Projects() {
         "PostgreSQL",
       ],
       link: "#",
-      repo: "#",
+      repo: "https://github.com/Anupamlugun/inventory-management-backend",
       image: "/img/inventory.png",
     },
     {
@@ -43,7 +43,7 @@ export default function Projects() {
         "A digital platform to manage bike-related services like fuel purchase, repairs, and maintenance tracking",
       tech: ["HTML", "CSS", "JavaScript", "Bootstrap", "PHP", "MySQL"],
       link: "#",
-      repo: "#",
+      repo: "https://github.com/Anupamlugun/bikeservice",
       image: "/img/bikeservice.png",
     },
     {
@@ -51,8 +51,8 @@ export default function Projects() {
       description:
         "A web app to search movies and shows, view details, and rate or review them",
       tech: ["React.js"],
-      link: "#",
-      repo: "#",
+      link: "https://box-office-anupamlugun.surge.sh/",
+      repo: "https://github.com/Anupamlugun/box-office",
       image: "/img/boxoffice.png",
     },
   ];
