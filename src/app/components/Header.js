@@ -15,7 +15,11 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 
-export default function Header({ mobileMenuOpen, activeSection }) {
+export default function Header({
+  mobileMenuOpen,
+  activeSection,
+  toggleMobileMenu,
+}) {
   return (
     <Card
       className={`fixed ${
@@ -82,7 +86,7 @@ export default function Header({ mobileMenuOpen, activeSection }) {
         <Separator className="bg-gray-700" />
 
         {/* Navigation */}
-        <nav className="mt-4">
+        <nav onClick={toggleMobileMenu} className="mt-4">
           <ul className="space-y-2">
             {[
               {

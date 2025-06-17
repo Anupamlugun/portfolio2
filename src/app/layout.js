@@ -1,8 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./components/ThemeProvider";
-import { Analytics } from '@vercel/analytics/next';
-import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,9 +15,49 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Anupam Lugun",
+  title: "Anupam Lugun – Full Stack Software Developer from Simdega, Jharkhand",
   description:
-    "Anupam Lugun is a full-stack developer with expertise in React.js, Node.js, and Spring Boot. He is passionate about building scalable web applications and has experience in various technologies including JavaScript, TypeScript, and Java.",
+    "Portfolio of Anupam Lugun – A professional full-stack software developer from Simdega, Jharkhand. Experienced in React, Java, Spring Boot, and scalable enterprise applications.",
+  keywords: [
+    "Anupam Lugun",
+    "anupamlugun",
+    "Simdega",
+    "Software Developer Simdega",
+    "Software Engineer Ranchi",
+    "Developer Jharkhand",
+    "Full Stack Developer India",
+    "React Developer Jharkhand",
+    "Spring Boot Developer",
+    "Java Developer Simdega",
+    "Frontend Developer Ranchi",
+  ].join(", "),
+  authors: [
+    { name: "Anupam Lugun", url: `${process.env.NEXT_PUBLIC_SITE_URL}` },
+  ],
+  metadataBase: new URL(`${process.env.NEXT_PUBLIC_SITE_URL}`),
+  openGraph: {
+    title: "Anupam Lugun – Full Stack Software Developer",
+    description:
+      "Explore the professional portfolio of Anupam Lugun – a skilled software engineer based in Simdega, Jharkhand. Specializing in React, Spring Boot, and enterprise-grade apps.",
+    url: `${process.env.NEXT_PUBLIC_SITE_URL}`,
+    siteName: "Anupam Lugun | Full Stack Developer",
+    locale: "en_IN",
+    type: "website",
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_SITE_URL}/img/profile.jpg`,
+        width: 1200,
+        height: 1200,
+        alt: "Anupam Lugun – Full Stack Software Developer from Jharkhand, India",
+        type: "image/jpeg",
+      },
+    ],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -28,8 +68,8 @@ export default function RootLayout({ children }) {
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
-           <Analytics />
-           <SpeedInsights />
+          <Analytics />
+          <SpeedInsights />
         </ThemeProvider>
       </body>
     </html>

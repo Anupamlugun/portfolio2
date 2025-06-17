@@ -42,7 +42,11 @@ export default function Home() {
 
   return (
     <main className="relative">
-      <Header mobileMenuOpen={mobileMenuOpen} activeSection={activeSection} />
+      <Header
+        mobileMenuOpen={mobileMenuOpen}
+        activeSection={activeSection}
+        toggleMobileMenu={toggleMobileMenu}
+      />
 
       <div className="ml-0 lg:ml-[300px]">
         <div className="fixed top-4 right-4 z-50 flex items-center gap-4">
@@ -58,7 +62,7 @@ export default function Home() {
           </Button>
         </div>
 
-        <Hero toggleMobileMenu={toggleMobileMenu} />
+        <Hero />
         <About />
         <Skills />
         <Projects />
