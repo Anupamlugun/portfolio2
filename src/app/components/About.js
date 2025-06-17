@@ -29,12 +29,10 @@ export default function About() {
         [
           { label: "Birthday:", value: "27 Feb 2002" },
           { label: "Phone:", value: "+919608683352" },
-          { label: "City:", value: "Simdega" },
         ],
         [
           { label: "Age:", value: calculateAge("27 Feb 2002") },
-          { label: "Degree:", value: "Master" },
-          { label: "Email:", value: "anupam.lugun.272@gmail.com" },
+          { label: "City:", value: "Simdega" },
         ],
       ],
     },
