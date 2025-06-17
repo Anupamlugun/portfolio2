@@ -1,8 +1,8 @@
 "use client";
+import { useEffect, useState } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import { useEffect, useState } from "react";
 import Resume from "./components/Resume";
 import { Footer } from "./components/Footer";
 import { ModeToggle } from "./components/ModeToggle";
@@ -14,14 +14,35 @@ import Skills from "./components/Skills";
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(true);
+  const [activeSection, setActiveSection] = useState("");
 
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen(!mobileMenuOpen);
-  };
+  const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
+
+  useEffect(() => {
+    const sectionIds = ["hero", "about", "skills", "projects", "resume"];
+
+    const handleScroll = () => {
+      for (let id of sectionIds) {
+        const el = document.getElementById(id);
+        if (el) {
+          const rect = el.getBoundingClientRect();
+          if (rect.top <= 100 && rect.bottom >= 100) {
+            setActiveSection(id);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Initial call
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <main className="relative">
-      <Header mobileMenuOpen={mobileMenuOpen} />
+      <Header mobileMenuOpen={mobileMenuOpen} activeSection={activeSection} />
 
       <div className="ml-0 lg:ml-[300px]">
         <div className="fixed top-4 right-4 z-50 flex items-center gap-4">

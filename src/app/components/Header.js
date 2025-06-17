@@ -15,7 +15,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 
-export default function Header({ mobileMenuOpen }) {
+export default function Header({ mobileMenuOpen, activeSection }) {
   return (
     <Card
       className={`fixed ${
@@ -87,34 +87,43 @@ export default function Header({ mobileMenuOpen }) {
             {[
               {
                 href: "#hero",
-                icon: <BiHomeSmile className="text-lg" />,
+                icon: <BiHomeSmile />,
                 text: "Home",
+                id: "hero",
               },
               {
                 href: "#about",
-                icon: <BiIdCard className="text-lg" />,
+                icon: <BiIdCard />,
                 text: "About",
+                id: "about",
               },
               {
                 href: "#skills",
-                icon: <BiBrain className="text-lg" />,
+                icon: <BiBrain />,
                 text: "Skills",
+                id: "skills",
               },
               {
                 href: "#projects",
-                icon: <BiCodeAlt className="text-lg" />,
+                icon: <BiCodeAlt />,
                 text: "Projects",
+                id: "projects",
               },
               {
                 href: "#resume",
-                icon: <BiFileBlank className="text-lg" />,
+                icon: <BiFileBlank />,
                 text: "Resume",
+                id: "resume",
               },
             ].map((item) => (
               <li key={item.text}>
                 <Button
                   variant="ghost"
-                  className="w-full justify-start gap-2 rounded-md p-2 text-white hover:bg-gray-800 hover:text-mythemecolor"
+                  className={`w-full justify-start gap-2 rounded-md p-2 hover:bg-gray-800 hover:text-mythemecolor ${
+                    typeof window !== "undefined" && activeSection === item.id
+                      ? "text-mythemecolor font-semibold"
+                      : "text-white"
+                  }`}
                   asChild
                 >
                   <Link href={item.href}>
