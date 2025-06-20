@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 import { ScrollTop } from "./components/ScrollTop";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import Certification from "./components/Certification";
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(true);
@@ -19,7 +20,14 @@ export default function Home() {
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
 
   useEffect(() => {
-    const sectionIds = ["hero", "about", "skills", "projects", "resume"];
+    const sectionIds = [
+      "hero",
+      "about",
+      "skills",
+      "certification",
+      "projects",
+      "resume",
+    ];
 
     const handleScroll = () => {
       for (let id of sectionIds) {
@@ -65,6 +73,7 @@ export default function Home() {
         <Hero />
         <About />
         <Skills />
+        <Certification />
         <Projects />
         <Resume />
         <Footer />

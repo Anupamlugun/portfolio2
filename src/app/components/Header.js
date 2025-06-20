@@ -10,6 +10,7 @@ import {
   BiBrain,
   BiCodeAlt,
   BiFileBlank,
+  BiBadgeCheck,
 } from "react-icons/bi";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -106,6 +107,12 @@ export default function Header({
                 icon: <BiBrain />,
                 text: "Skills",
                 id: "skills",
+              },
+              {
+                href: "#certification",
+                icon: <BiBadgeCheck />,
+                text: "Certification",
+                id: "certification",
               },
               {
                 href: "#projects",
