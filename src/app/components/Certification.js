@@ -14,7 +14,7 @@ import { ExternalLink } from "lucide-react";
 const certificates = [
   {
     title: "Web Development",
-    issuer: "Intershaala",
+    issuer: "Internshala",
     date: "August 2022",
     link: "https://trainings.internshala.com/view_certificate/71492F80-74DE-00FA-7445-C36C85E91680/F271AB9A-6F48-8921-7C13-6A8D4DF8109F/",
     image:
@@ -22,11 +22,19 @@ const certificates = [
   },
   {
     title: "Node Js",
-    issuer: "Intershaala",
+    issuer: "Internshala",
     date: "January 2025",
     link: "https://trainings.internshala.com/certificate/view/nsdc/dk3p2b4e4pd/eijbfj4ja5d/",
     image:
       "https://training-uploads.internshala.com/nsdc-certificate-images/8qjq7uz7xhp.jpg",
+  },
+    {
+    title: "Core Java",
+    issuer: "Internshala",
+    date: "June 2025",
+    link: "https://trainings.internshala.com/view_certificate/jnjc6be0yd0/ijb4cg3daf9/",
+    image:
+      "https://training-uploads.internshala.com/certificates/COC-ijb4cg3daf9.jpg",
   },
 ];
 
@@ -47,7 +55,7 @@ const Certification = () => (
         {certificates.map((cert, idx) => (
           <Card
             key={idx}
-            className="flex flex-col justify-between h-[500px] border border-border hover:shadow-lg transition-shadow duration-300 w-full sm:w-[90%] md:w-[45%] lg:w-[30%]"
+            className="flex flex-col justify-between h-[400px] border border-border hover:shadow-lg transition-shadow duration-300 w-full sm:w-[90%] md:w-[45%] lg:w-[30%]"
           >
             {/* Header: Certificate Image */}
             <CardHeader className="flex items-center justify-center pt-6 pb-0 h-[180px]">
