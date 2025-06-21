@@ -3,6 +3,7 @@ import "./globals.css";
 import { ThemeProvider } from "./components/ThemeProvider";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,7 +39,7 @@ export const metadata = {
   openGraph: {
     title: "Anupam Lugun – Full Stack Software Developer",
     description:
-      "Explore the professional portfolio of Anupam Lugun – a skilled software engineer based in Simdega, Jharkhand. Specializing in React, Spring Boot, and enterprise-grade apps.",
+      "I'm Anupam Lugun, a Full Stack Developer skilled in React, Java, and Spring Boot. Explore my portfolio, blog, and projects.",
     url: `${process.env.NEXT_PUBLIC_SITE_URL}`,
     siteName: "Anupam Lugun | Full Stack Developer",
     locale: "en_IN",
@@ -61,8 +62,31 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Anupam Lugun",
+    url: `${process.env.NEXT_PUBLIC_SITE_URL}`,
+    jobTitle: "Full Stack Java Developer",
+    sameAs: [
+      "https://www.linkedin.com/in/anupam-lugun",
+      "https://github.com/anupamlugun",
+      "https://www.instagram.com/anupam_lugun",
+      "https://m.youtube.com/@anupamlugun",
+    ],
+  };
   return (
     <html lang="en" suppressHydrationWarning>
+      <Head>
+        <meta
+          name="google-site-verification"
+          content="S4PxhMF5hiEdAwaq9VxxRMkCnzCnU2GnPcnoo-5r5_g"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
