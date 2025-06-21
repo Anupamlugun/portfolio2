@@ -77,7 +77,12 @@ export default function Header({
               className="text-white hover:bg-gray-800 hover:text-mythemecolor"
               asChild
             >
-              <Link href={social.url} target="_blank" rel="noopener noreferrer">
+              <Link
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Visit ${social.name} profile`}
+              >
                 {social.icon}
               </Link>
             </Button>

@@ -49,6 +49,11 @@ export default function Skills() {
                   value={skill.value}
                   className="h-2 bg-gray-200"
                   indicatorClassName="bg-blue-500"
+                  role="progressbar"
+                  aria-label={`${skill.name} proficiency level`}
+                  aria-valuemin={0}
+                  aria-valuemax={100}
+                  aria-valuenow={skill.value}
                 />
               </CardContent>
             </Card>
