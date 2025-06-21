@@ -28,6 +28,14 @@ const certificates = [
     image:
       "https://training-uploads.internshala.com/nsdc-certificate-images/8qjq7uz7xhp.jpg",
   },
+    {
+    title: "Core Java",
+    issuer: "Internshala",
+    date: "June 2025",
+    link: "https://trainings.internshala.com/view_certificate/jnjc6be0yd0/ijb4cg3daf9/",
+    image:
+      "https://training-uploads.internshala.com/certificates/COC-ijb4cg3daf9.jpg",
+  },
 ];
 
 const Certification = () => (
