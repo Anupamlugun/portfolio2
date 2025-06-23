@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Type from "./Type";
 
 export default function Hero() {
@@ -7,17 +6,24 @@ export default function Hero() {
       id="hero"
       className="relative flex h-screen items-center justify-center bg-gray-900 text-white overflow-hidden"
     >
-      <Image
-        src="/img/bg.webp"
-        alt="Hero background"
-        fill
-        priority 
-        className="object-cover object-center z-0"
-      />
+      <div
+        className="absolute inset-0 z-0 bg-cover bg-center"
+        style={{
+          backgroundImage:
+            "url('/img/bg-mobile.jpg')",
+        }}
+      >
+        <style jsx>{`
+          @media (min-width: 1024px) {
+            div[style] {
+              background-image: url('/img/bg.png');
+            }
+          }
+        `}</style>
+      </div>
       <div className="z-10">
         <Type />
       </div>
     </section>
   );
 }
-
