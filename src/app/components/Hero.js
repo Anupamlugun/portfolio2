@@ -9,8 +9,8 @@ export default function Hero() {
       <div
         className="
           absolute inset-0 z-0 
-          bg-[url('/img/bg-mobile.webp')] 
-          lg:bg-[url('/img/bg.webp')] 
+          bg-[url('/img/bg-mobile.jpg')] 
+          lg:bg-[url('/img/bg.png')] 
           bg-cover bg-center
         "
       ></div>
