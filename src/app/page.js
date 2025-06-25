@@ -12,6 +12,7 @@ import { ScrollTop } from "./components/ScrollTop";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Certification from "./components/Certification";
+import { ScrollAnimate } from "./components/scroll-animate"
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(true);
@@ -71,7 +72,9 @@ export default function Home() {
         </div>
 
         <Hero />
+     <ScrollAnimate animation="fadeIn" duration={1}>
         <About />
+        </ScrollAnimate>
         <Skills />
         <Certification />
         <Projects />
