@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { useIntersectionObserver } from "../hooks/use-intersection-observer"
+import { motion } from "framer-motion";
+import { useIntersectionObserver } from "../hooks/use-intersection-observer";
 
 const animationVariants = {
   fadeIn: {
@@ -32,7 +32,7 @@ const animationVariants = {
     hidden: { opacity: 0, rotate: -10, scale: 0.9 },
     visible: { opacity: 1, rotate: 0, scale: 1 },
   },
-}
+};
 
 export function ScrollAnimate({
   children,
@@ -45,9 +45,9 @@ export function ScrollAnimate({
   const { ref, isIntersecting } = useIntersectionObserver({
     threshold,
     triggerOnce: true,
-  })
+  });
 
-  const variants = animationVariants[animation]
+  const variants = animationVariants[animation];
 
   return (
     <motion.div
@@ -64,5 +64,5 @@ export function ScrollAnimate({
     >
       {children}
     </motion.div>
-  )
+  );
 }
