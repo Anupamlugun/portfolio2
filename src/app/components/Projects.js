@@ -42,7 +42,7 @@ export default function Projects() {
       description:
         "A digital platform to manage bike-related services like fuel purchase, repairs, and maintenance tracking",
       tech: ["HTML", "CSS", "JavaScript", "Bootstrap", "PHP", "MySQL"],
-      link: "#",
+      link: "https://bikeservice.rf.gd",
       repo: "https://github.com/Anupamlugun/bikeservice",
       image: "/img/bikeservice.png",
     },
