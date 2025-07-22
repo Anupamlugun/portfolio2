@@ -32,9 +32,9 @@ const certificates = [
     title: "Core Java",
     issuer: "Internshala",
     date: "June 2025",
-    link: "https://trainings.internshala.com/view_certificate/jnjc6be0yd0/ijb4cg3daf9/",
+    link: "https://trainings.internshala.com/certificate/view/nsdc/jnjc6be0yd0/12fk13o9nat/",
     image:
-      "https://training-uploads.internshala.com/certificates/COC-ijb4cg3daf9.jpg",
+      "https://training-uploads.internshala.com/nsdc-certificate-images/2sgk2vh7gaj.jpg",
   },
 ];
 
