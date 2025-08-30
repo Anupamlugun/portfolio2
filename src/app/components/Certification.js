@@ -28,13 +28,21 @@ const certificates = [
     image:
       "https://training-uploads.internshala.com/nsdc-certificate-images/8qjq7uz7xhp.jpg",
   },
-    {
+  {
     title: "Core Java",
     issuer: "Internshala",
     date: "June 2025",
     link: "https://trainings.internshala.com/certificate/view/nsdc/jnjc6be0yd0/12fk13o9nat/",
     image:
       "https://training-uploads.internshala.com/nsdc-certificate-images/2sgk2vh7gaj.jpg",
+  },
+    {
+    title: "Cloud computing with AWS",
+    issuer: "Internshala",
+    date: "August 2025",
+    link: "https://trainings.internshala.com/certificate/view/nsdc/4vpa8xiwa51/jkk079jesb8/",
+    image:
+      "https://training-uploads.internshala.com/nsdc-certificate-images/aga0ed6l8gm.jpg",
   },
 ];
 
